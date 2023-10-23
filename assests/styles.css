@@ -1,0 +1,461 @@
+/* ------------------------GENERAL--------------------------------------- */
+
+*{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --back-color:rgb(253, 240, 240);
+    --main-color:rgb(241, 180, 187);
+    --second-color:rgb(31, 65, 114);
+    --text-color:rgb(19, 32, 67);
+}
+
+
+body{
+    background-color: var(--back-color);
+
+}
+
+header{
+    background-color: var(--main-color);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+
+
+}
+
+.logo img{
+    height: 60px;
+
+}
+
+.logo{
+    display: flex;
+}
+.pages{
+    display: flex;
+   align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.pages a {
+    color:var(--second-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+
+}
+
+main {
+    min-height: 75vh;
+}
+
+footer{
+    background-color: var(--second-color);
+    height:10vh;
+    width: 100%;
+    color: var(--back-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nombre{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--second-color);
+    text-align: center;
+
+}
+
+.nombre h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+/* ---------------------------------INDEX----------------------------------------- */
+
+.banner img{
+    display: flex;
+    width: 100%;
+    height: 18vw;
+    object-fit: cover;
+    box-shadow: 43px 27px 55px -49px rgba(0,0,0,0.51);
+
+}
+
+.main-index{
+     min-height: 75vh;
+     display: flex;
+    flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+
+
+
+.index-content{
+    width: 95vw;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
+
+
+.texto-main{
+    width:40vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.texto-main p{
+    font-size: 1.5rem;
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto-main{
+     width: 40vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.foto-main img{
+    width: 70%;
+    max-height: 400px;
+
+
+    display: flex;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 43px 27px 55px -24px rgba(0,0,0,0.51);
+}
+
+
+
+
+/* ---------------------------ABOUT--------------------------------------- */
+
+.main-about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.about-container img{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-container p{
+    width:60dvw;
+    
+    display: flex;
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.about-container {
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem 5rem;
+    
+    
+    display: flex;
+    flex-direction: row;
+     margin-bottom: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+
+/* ---------------------------CONTACT-------------------------------------- */
+
+.main-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    text-align: center;
+
+}
+
+.img-contact{
+    width: 90vw;
+    display: flex;
+    text-align: center;
+}
+
+.img-contact img{
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 43px 27px 55px -24px rgba(0,0,0,0.51);
+
+}
+
+.text-contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.contact-info a{
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 40px;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+}
+/* ---------------------------SERVICES-------------------------------------- */
+
+
+table{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+ tr, th, td{
+
+    color: var(--text-color);
+    border: solid 1px var(--main-color);
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+
+/* ---------------------------RAITINGS-------------------------------------- */
+
+
+.main-raiting{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+.raiting-content{
+    width: 100%;
+    justify-content: center ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.raiting-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0 5rem;
+    flex-wrap: wrap;
+
+}
+.opinions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opinions li{
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+
+.raiting-img img{
+    max-width: 100% ;
+    
+    display: flex;
+}
+
+.opinions img {
+    align-self: center;
+    display: flex;
+    width: 150px;
+    margin: 50px;
+}
+
+/* ---------------------------HIRE-------------------------------------- */
+
+.main-hire{    
+    width: 100%s;
+    display: flex;
+    flex-direction: column;    
+    flex-wrap: wrap;
+    
+}
+
+
+
+.hire-content{
+    width: 100%;
+    display: flex;
+    flex-direction:row-reverse;    
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 3rem 0;
+}
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem 0;
+}
+
+iframe{
+    display: flex;
+    width: 90%;
+}
+
+.formulario  {
+    
+    display: flex;
+    flex-direction: column;
+    text-align:start ;
+    border: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+fieldset{
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+
+}
+.payment{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    }
+.date{
+    display: flex;
+    flex-direction: column;
+}
+
+.date input, .service option{
+    width: 100%;
+    height: 20px;
+}
+.service label{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+textarea{
+    resize: none;
+}
+
+#term {
+    font-size:1rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+
+
+.client-info{
+   min-width: 50vw;
+}
+
+@media screen and (max-width: 760px) {
+
+    header{
+        height: 35vh;
+        display: flex;
+        flex-direction: column-reverse ;
+    }
+      .pages{
+        flex-direction: column;
+      }
+
+      .index-content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .contact-info{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .raiting-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hire-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  }

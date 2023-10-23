@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assests/styles.css">
+    <style>input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }</style>
+    <title>Mindy Photos</title>
+    <link rel="shortcut icon" href="./images-Sprint1/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="pages">
+                <a href="../index.html"> Home </a>
+                <a href="./about.html"> About </a>
+                <a href="./contact.html"> Contact </a>
+                <a href="./services.html"> Services </a>
+                <a href="./raiting.html"> Raitings </a>
+                <a href="./hire.html">Hire</a>
+            </div>
+        </div>
+
+       <div class="logo">
+          <img src="images-Sprint1/logo.png" alt="">
+     </div>
+       
+    </header>
+
+    <main class="main-hire">
+
+           <div class="nombre">
+            <h1>Hire</h1>
+            <h2>Fill out the form so we can attend your event</h2>
+           </div>
+
+        <div class="hire-content">
+                        
+           <div class="formulario">
+    
+            <form action="./show_data.html" method="get">
+    
+                <fieldset>
+                    <label for="name">First Name and Last Name </label>
+                    <input name="name" id="name" type="text" required> 
+                </fieldset>
+                
+                <fieldset>
+                    <label for="number">Phone Number </label>       
+                    <input name="phone" id="number" type="number" required>          
+                </fieldset>
+                            
+                <fieldset class="service">
+                    <label for="service"> Choose Service <select name="service" id="service" required>   
+                        <option value="" >Choose Service</option>  
+                        <option value="wedding" > Wedding</option>
+                        <option value="birthday" > Birthday</option>
+                        <option value="kids-birthday" > Kids Birthday</option>
+                        <option value="studio-outside" > Photos Studio or Outside</option>
+                       </select>        
+                       </label>
+                </fieldset>
+               
+    
+                <fieldset class="date">
+                    <label for="date"> Choose Date </label>
+                    <input type="date" name="date" id="date" required>
+                </fieldset>
+                
+                
+                <fieldset class="payment">                
+                    <legend>Payment Options</legend>
+                    
+                    <div>
+                        <input type="radio" name="payment" id="cash" value="cash" required >
+                        <label for="cash"> Cash</label>
+                    </div>
+                    
+                        
+                    <div>
+                        <input type="radio" name="payment" id="credit" value="credit" required>
+                        <label for="credit"> Credit Card</label> 
+                    </div>
+                      
+                    
+                    <div>
+                     <input type="radio" name="payment" id="debit" value="debit">
+                     <label for="debit"> Debit Card</label>
+                    </div>
+                    
+                </fieldset>    
+                <fieldset class="text">
+                    <legend> Messege (Location and Time)</legend>
+                    <textarea name="text"  cols="30" rows="10"></textarea>
+                </fieldset>  
+    
+                <fieldset id="term">
+                    <input type="checkbox"  required>
+                    <label >I accept terms and conditions..</label>
+                    <input type="submit" >
+                     </fieldset>                           
+                    
+    
+            </form>
+          </div>  
+
+          <div class="mapa">
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.6897532054!2d-118.41173249999999!3d34.020479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sar!4v1697825182329!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>         
+    
+    </main>
+
+<footer>
+    <H2>Created by Sofia Pincolini</H2>
+</footer>
+
+     
+    
+</body>
+</html>
